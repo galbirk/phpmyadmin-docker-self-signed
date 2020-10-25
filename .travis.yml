@@ -13,5 +13,5 @@ before_install:
 script:
   - curl 127.0.0.1:8080
   - curl --insecure https://127.0.0.1
-  - echo "$DOCKER_HUB_PASSWORD" | docker login -u "$DOCKER_HUB_USER" --password-stdin
+  - echo "$DOCKER_HUB_PASS" | docker login -u "$DOCKER_HUB_USER" --password-stdin
   - docker push ${DOCKER_HUB_USER}/${DOCKER_HUB_REPO}:self-signed
