@@ -4,7 +4,6 @@ services:
   - docker
 
 env:
-  - DOCKER_HUB_REPO=phpmyadmin
   - CURLOPT_SSL_VERIFYHOST=0
 
 before_install:
