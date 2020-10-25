@@ -5,6 +5,7 @@ services:
 
 env:
   - DOCKER_HUB_REPO=phpmyadmin
+  - CURLOPT_SSL_VERIFYHOST=0
 
 before_install:
 - docker build --no-cache -t ${DOCKER_HUB_USER}/${DOCKER_HUB_REPO}:self-signed .
