@@ -8,6 +8,6 @@ before_install:
 - docker run --name phpmyadmin -d -e PMA_ARBITRARY=1 -p 443:443 ${DOCKER_HUB_USER}/${DOCKER_HUB_REPO}:self-signed 
 
 script:
-  - curl --insecure https://127.0.0.1 | grep gnutls_handshake || true
+  - curl --insecure https://127.0.0.1 || true | grep gnutls_handshake 
   - echo "$DOCKER_HUB_PASS" | docker login -u "$DOCKER_HUB_USER" --password-stdin
   - docker push ${DOCKER_HUB_USER}/${DOCKER_HUB_REPO}:self-signed
