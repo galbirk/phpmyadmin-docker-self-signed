@@ -1,5 +1,5 @@
 # phpmyadmin-docker-self-signed
-![build](https://travis-ci.com/galbirk/phpmyadmin-docker-compose.svg?branch=main)
+![build](https://travis-ci.com/galbirk/phpmyadmin-docker-self-signed.svg?token=cAJ7spzZZ8Xpa3xfCSSh&branch=main)
 
 phpmyadmin Dockerfile and docker-compose.yml with self singed certificate.
 
